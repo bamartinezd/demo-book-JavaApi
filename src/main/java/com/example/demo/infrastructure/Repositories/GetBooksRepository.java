@@ -7,14 +7,12 @@ import java.util.UUID;
 import com.example.demo.Domain.Contracts.IGetBooksRepository;
 import com.example.demo.Domain.Entities.Book;
 
+import org.springframework.stereotype.Service;
+
+@Service
 public class GetBooksRepository implements IGetBooksRepository {
 
-//private List<Book> _books;
-
-    public GetBooksRepository() {
-        
-        
-    }
+    public GetBooksRepository() {}
 
     @Override
     public List<Book> getAllBooks() {
